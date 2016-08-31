@@ -7,7 +7,7 @@ require.config({
     paths : {
         'jquery' : "./public/libs/jquery/dist/jquery",
         'bootstrap' : "./public/libs/bootstrap/dist/js/bootstrap.min",
-        "index" : "./public/js/index"
+        "index" : "./views/index/index"
     }
 });
 
