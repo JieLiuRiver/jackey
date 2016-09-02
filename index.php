@@ -56,16 +56,38 @@
     </div>
 </nav>
 
+<!--<iframe src="test.html"></iframe>-->
+
 <!-- index_content -->
-<div class="container" id="index_content">
+<div class="container-fluid" id="index_content">
     <div class="row">
+        <div class="index_wrap">
+            <ul id="index_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <ul id="btnWrap">
+            <li class="active">项目A</li>
+            <li>项目B</li>
+            <li>项目C</li>
+            <li>项目D</li>
+        </ul>
     </div>
 </div>
 
-<div class="container">
+<!--<div class="container">
     <div id="index_footer" class="col-md-12">
     </div>
-</div>
+</div>-->
+<script>
+    function payOk(){
+        alert('完成支付了');
+    }
+</script>
 
 
 </body>

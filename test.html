@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>HELLO World</h1>
+    <button type="button" onclick="closeWindow()">close</button>
+    <button type="button" onclick="doWork()">click</button>
+    <script>
+        function closeWindow(){
+            window.open("","_self").close()
+        }
+        function doWork(){
+            setTimeout(function(){
+                $("#payDlg").dialog('close');
+            },3000);
+            parent.document.getElementById("index_nav").style.backgroundColor = '#333';
+        }
+            //window.parent.postMessage('close');
+
+
+        function payCallBack(){
+            if(!!window.parent){
+                window.parent.payOk();
+            }
+        }
+
+        payCallBack();
+
+    </script>
+</body>
+</html>

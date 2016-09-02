@@ -12,5 +12,5 @@ require.config({
 });
 
 require(['jquery', 'bootstrap', 'index'], function(jquery, bootstrap, index){
-    index.init();
+    index.init(jquery);
 });

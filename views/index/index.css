@@ -1,3 +1,6 @@
+body{
+    overflow:hidden;
+}
 #logo_name{
     font-size:16px;
 }
@@ -63,13 +66,87 @@
 #index_content .row{
     height:600px;
     background:#e5e5e5;
-    margin-top:55px;
-}
+    margin-top:105px;  }
 
 #index_footer{
     position:fixed;
     bottom:0;
     left:0;
     height:40px;
-    background:#ccc;
-}
+    background:#ccc;  }
+
+.index_wrap{
+    width:1100px;
+    height:560px;
+    /*background:#333;
+    box-shadow:0 0 0 2px rgba(0,0,0,0.5), inset 0 0 5px rgba(0,0,0,1);
+    border-radius:5px;
+    */margin:20px auto;
+    -webkit-perspective:1200px;
+    -webkit-transform:translateZ(400px);}
+
+.index_wrap ul{
+    width:100%;
+    height:100%;
+    position:relative;
+    transition:2s;
+    -webkit-transform-origin:center center -550px;
+    -webkit-transform-style:preserve-3d;}
+
+.index_wrap li{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    color:#fff;
+    text-align:center; }
+
+.index_wrap li:nth-of-type(1){
+    background:url(../../public/img/1.jpg) no-repeat;
+    background-size:cover;}
+
+.index_wrap li:nth-of-type(2){
+    background:#CF0;
+    left:100%;
+    -webkit-transform-origin:left;
+    -webkit-transform:rotateY(90deg);
+    background:url(../../public/img/2.jpg) no-repeat;
+    background-size:cover;}
+
+.index_wrap li:nth-of-type(3){
+    background:red;
+    left:0; top:0;
+    -webkit-transform:translateZ(-1100px) ;
+    background:url(../../public/img/4.jpg) no-repeat;
+    background-size:cover;}
+
+.index_wrap li:nth-of-type(4){
+    background:green;
+    left:-100%;
+    -webkit-transform-origin:right;
+    -webkit-transform:rotateY(-90deg);
+    background:url(../../public/img/3.jpg) no-repeat;
+    background-size:cover;}
+
+#btnWrap{
+    position:fixed;
+    left:0;
+    height:120px;
+    top:calc( 50% - 60px  );}
+
+#btnWrap li{
+    width:100px;
+    height:24px;
+    margin:3px 0;
+    background:#f60;
+    text-align:right;
+    padding-right:10px;
+    color:#fff;
+    font:14px/24px  "微软雅黑";
+    position:relative;
+    transition:.4s;
+    cursor:pointer;
+    left:-70px;}
+
+#btnWrap .active {
+    left:0;}
